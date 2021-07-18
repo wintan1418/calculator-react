@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Open a terminal and run the command `git clone https://github.com/wintan1418/react-calculaltor`
+- Open a terminal and run the command `git clone https://github.com/wintan1418/calculator-react/tree/milestone-1`
 - cd react-calculator
 - run `npm install`
 - run `npm run build`
