@@ -1,11 +1,12 @@
-import './App.css';
-
-function App() {
+const App = () => {
+  const buttonColor = "#f2a33c";
   return (
     <div className="App">
-      <h1>react calculator</h1>
-    </div>
-  );
-}
-
-export default App;
+      <div className = "calc-wrapper">
+        <Input/>
+        <div className = "row">
+          <Button symbol = "AC"/>
+          <Button symbol = "+/-"/>
+          <Button symbol = "%"/>
+          <Button symbol = "÷" color={buttonColor}/>
+        </div>
