@@ -38,7 +38,7 @@ const calculate = ({total = null,next = null,operation = null}, button) => {
 
   }
 } else if (operation) {
-  return { total: appendNum(total, button), next, operation };
+  return { total: appendNum(button, total), next, operation };
 } else if (next || button !== '0') {
   return { next: appendNum(next, button), total: null, operation: null };
 }
