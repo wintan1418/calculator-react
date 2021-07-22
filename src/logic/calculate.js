@@ -23,6 +23,12 @@ const calculate = ({total = null,next = null,operation = null}, button) => {
       operation: button,
       total: null,
     };
+  } else if (total && !next) {
+    return {
+      next: total,
+      operation: button,
+      total: null,
+    };
 
   }
 }
