@@ -1,12 +1,30 @@
+import operate from './Operate';
+
+const isOperation = (op) => ['X', '-', '+', '÷', '+/-', '%'].indexOf(op) > -1;
+
+const appendNum = (data, number) => {
+  if (!data) {
+    return number;
+  }
+
+  if (
+    (data === '0' && number === '0')
+    || (number === '.' && data.indexOf('.') > -1)
+  ) {
+    return data;
+  }
+
+  return `${data}${number}`;
+};
+
 const calculate = ({total = null,next = null,operation = null}, button) => {
   if (button === 'AC') {
     return {total:null,next:null, operation:null};
   } if (button === '=') {
   } if (next && operation && total) {
-     return {total: operate(next,operation,total), operation:null,next:null};
-
+     return {total: operate(next,operation,total), operation: null, next:null };
   }
-} else if (isOperation (button)) {
+  } else if (isOperation (button)) {
   if (button === '+/-') {
     if (total) {
       return { operation, next, total: operate(total, '-1', 'X') };
@@ -35,8 +53,6 @@ const calculate = ({total = null,next = null,operation = null}, button) => {
       operation: button,
       total: null,
     };
-
-  }
 } else if (operation) {
   return { total: appendNum(button, total), next, operation };
 } else if (next || button !== '0') {
