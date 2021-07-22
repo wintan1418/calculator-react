@@ -24,7 +24,7 @@ const calculate = ({total = null,next = null,operation = null}, button) => {
   } if (next && operation && total) {
      return {total: operate(next,operation,total), operation: null, next:null };
   }
-  } else if (isOperation (button)) {
+} else if (isOperation(button)) {
   if (button === '+/-') {
     if (total) {
       return { operation, next, total: operate(total, '-1', 'X') };
