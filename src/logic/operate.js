@@ -8,9 +8,23 @@ const operate = (num1, num2, op) => {
     case '+':
       result = big1.plus(big2);
       break;
-      case '-':
-        result = big1.minus(big2);
-        break;
-      case 'X':
-        result = big1.times(big2);
-        break;
+    case '-':
+      result = big1.minus(big2);
+      break;
+    case 'X':
+      result = big1.times(big2);
+      break;
+    case '÷':
+      if (big2.toNumber() === 0) {
+        return 'You have an error: improper division by zero.';
+      }
+      result = big1.div(big2);
+      break;
+    default:
+      throw new Error(`Wrong operator ${op}`);
+  }
+
+  return result.toNumber().toString();
+};
+
+export default operate;
