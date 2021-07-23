@@ -1,10 +1,10 @@
 import Big from 'big.js';
 
-const operate = (num1, num2, op) => {
+const operate = (num1, num2, ope) => {
   const big1 = Big(num1);
   const big2 = Big(num2);
   let result;
-  switch (op) {
+  switch (ope) {
     case '+':
       result = big1.plus(big2);
       break;
@@ -21,7 +21,7 @@ const operate = (num1, num2, op) => {
       result = big1.div(big2);
       break;
     default:
-      throw new Error(`Wrong operator ${op}`);
+      throw new Error(`Wrong operator ${ope}`);
   }
 
   return result.toNumber().toString();

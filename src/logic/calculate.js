@@ -1,6 +1,6 @@
 import operate from './operate';
 
-const isOperation = op => ['X', '-', '+', '÷', '+/-', '%'].indexOf(op) > -1;
+const isOperation = ope => ['X', '-', '+', '÷', '+/-', '%'].indexOf(ope) > -1;
 
 const appendNum = (data, number) => {
   if (!data) {
