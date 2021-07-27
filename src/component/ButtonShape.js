@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
+import './ButtonShape.css';
 
 const ButtonShape = ({ clickHandler }) => (
   <div className="button-shape">

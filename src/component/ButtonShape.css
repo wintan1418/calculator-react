@@ -1,0 +1,21 @@
+.button-shape {
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+
+.button-shape > div {
+  height: 100px;
+  
+}
+
+.button-shape button {
+  height: 100%;
+  width: 25%;
+  color: black;
+}
+
+.button-shape button:hover {
+  color: brown;
+  background-color: black;
+}

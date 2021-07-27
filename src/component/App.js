@@ -1,5 +1,5 @@
 /* eslint-disable react/sort-comp */
-import '../App.css';
+import './App.css';
 import React from 'react';
 import calculate from '../logic/calculate';
 import Display from './Display';

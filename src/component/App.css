@@ -1,0 +1,10 @@
+body {
+  
+  background-size: cover;
+}
+
+.calculator {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
