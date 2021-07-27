@@ -4,9 +4,15 @@ import ButtonShape from './ButtonShape';
 import React from 'react';
 
 class App extends React.Component{
- constructor()[
-   
- ]
+ constructor(){
+  super ();
+  this.state = {
+    total:null,
+    total:null,
+    operation:null
+  }
+ }
+ 
 };
 
 
