@@ -1,12 +1,13 @@
 import React from 'react';
-import Button from './Button';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
-const ButtonShape = () => (
-  <>
+
+const ButtonShape = ({clickHandler}) => (
+  <div className = "button-shape">
     <div>
-      <Button name="AC" />
-      <Button name="+/-" />
+      <Button color="E0E0E0" name="AC" clickHandler={clickHandler} />
+      <Button color="E0E0E0" name="+/-" clickHandler={clickHandler} />
       <Button name="%" />
       <Button name="÷" />
     </div>
