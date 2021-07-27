@@ -27,15 +27,15 @@ const ButtonShape = ({clickHandler}) => (
     </div>
 
     <div>
-      <Button  name="1"  clickHandler={clickHandler}/>
-      <Button name="2"  clickHandler={clickHandler}/>
-      <Button name="3" clickHandler={clickHandler} />
+      <Button color="E0E0E0" name="1"  clickHandler={clickHandler}/>
+      <Button color="E0E0E0"name="2"  clickHandler={clickHandler}/>
+      <Button color="E0E0E0"name="3" clickHandler={clickHandler} />
       <Button name="+" clickHandler={clickHandler} />
     </div>
 
     <div>
-      <Button name="0" clickHandler={clickHandler} />
-      <Button name="."  clickHandler={clickHandler}/>
+      <Button color="E0E0E0"name="0" clickHandler={clickHandler} />
+      <Button color="E0E0E0"name="."  clickHandler={clickHandler}/>
       <Button name="=" clickHandler={clickHandler} />
     </div>
   </>
