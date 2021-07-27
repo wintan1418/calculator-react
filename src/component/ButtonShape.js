@@ -13,9 +13,9 @@ const ButtonShape = ({clickHandler}) => (
     </div>
 
     <div>
-      <Button name="7" />
-      <Button name="8" />
-      <Button name="9" />
+      <Button color="E0E0E0" name="7"clickHandler={clickHandler} />
+      <Button color="E0E0E0" name="8"clickHandler={clickHandler} />
+      <Button color="E0E0E0"name="9"clickHandler={clickHandler} />
       <Button name="X" />
     </div>
 
