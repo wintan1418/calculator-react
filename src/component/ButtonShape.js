@@ -16,14 +16,14 @@ const ButtonShape = ({clickHandler}) => (
       <Button color="E0E0E0" name="7"clickHandler={clickHandler} />
       <Button color="E0E0E0" name="8"clickHandler={clickHandler} />
       <Button color="E0E0E0"name="9"clickHandler={clickHandler} />
-      <Button name="X" />
+      <Button name="X" clickHandler={clickHandler}/>
     </div>
 
     <div>
-      <Button name="4" />
-      <Button name="5" />
-      <Button name="6" />
-      <Button name="-" />
+      <Button color="E0E0E0" name="4" clickHandler={clickHandler} />
+      <Button color="E0E0E0" name="5" clickHandler={clickHandler} />
+      <Button color="E0E0E0" name="6" clickHandler={clickHandler} />
+      <Button name="-" clickHandler={clickHandler} />
     </div>
 
     <div>
