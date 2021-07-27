@@ -8,8 +8,8 @@ const ButtonShape = ({clickHandler}) => (
     <div>
       <Button color="E0E0E0" name="AC" clickHandler={clickHandler} />
       <Button color="E0E0E0" name="+/-" clickHandler={clickHandler} />
-      <Button name="%" />
-      <Button name="÷" />
+      <Button  color="E0E0E0"name="%" clickHandler={clickHandler}/>
+      <Button name="÷" clickHandler={clickHandler}/>
     </div>
 
     <div>
