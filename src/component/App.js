@@ -13,7 +13,11 @@ class App extends React.Component{
   }
   this.handleClick = this.handleClick.bind(this);
  }
- 
+ get result() {
+  const { next, total, operation } = this.state;
+
+  return `${next || ''}${total || ''}${operation || ''}`;
+}
 };
 
 
