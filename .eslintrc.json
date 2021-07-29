@@ -20,7 +20,8 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "arrow-parens": ["error", "as-needed"],
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "no-mixed-operators": 0
   },
   "ignorePatterns": [
     "dist/",
