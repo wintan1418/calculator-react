@@ -1,11 +1,11 @@
 import Big from 'big.js';
 
-const operate = (num1, num2, ope) => {
+const operate = (num1, num2, op) => {
   const big1 = Big(num1);
   const big2 = Big(num2);
 
   let result;
-  switch (ope) {
+  switch (op) {
     case '+':
       result = big1.plus(big2);
       break;
@@ -17,12 +17,12 @@ const operate = (num1, num2, ope) => {
       break;
     case '÷':
       if (big2.toNumber() === 0) {
-        return 'Error: division by zero.';
+        return 'Error alert!: unreasonable division by zero.';
       }
       result = big1.div(big2);
       break;
     default:
-      throw new Error(`Invalid operator ${ope}`);
+      throw new Error(`Wrong operator ${op}`);
   }
 
   return result.toNumber().toString();
