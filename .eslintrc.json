@@ -21,7 +21,8 @@
     "no-shadow": "off",
     "arrow-parens": ["error", "as-needed"],
     "linebreak-style": 0,
-    "no-mixed-operators": 0
+    "no-mixed-operators": 0,
+    "import/no-cycle": "off"
   },
   "ignorePatterns": [
     "dist/",
