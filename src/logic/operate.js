@@ -25,7 +25,7 @@ const operate = (num1, num2, op) => {
       throw new Error(`Wrong operator ${op}`);
   }
 
-  return result.toNumber().toString();
+  return result.toString();
 };
 
 export default operate;
