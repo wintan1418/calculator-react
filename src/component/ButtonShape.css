@@ -4,9 +4,8 @@
   background: black;
 }
 
-.button-shape > div {
+.button-panel > div {
   height: 100px;
-  
 }
 
 .button-shape button {
