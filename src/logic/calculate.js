@@ -67,7 +67,7 @@ const calculate = ({ total = null, next = null, operation = null }, button) => {
     return { next: appendNum(next, button), total: null, operation: null };
   }
 
-  return { total, operation };
+  return { total, next, operation };
 };
 
 export default calculate;

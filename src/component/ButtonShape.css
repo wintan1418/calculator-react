@@ -4,13 +4,12 @@
   background: black;
 }
 
-.button-panel > div {
+.button-shape > div {
   height: 100px;
 }
 
 .button-shape button {
   height: 100%;
-  width: 25%;
   color: black;
 }
 
