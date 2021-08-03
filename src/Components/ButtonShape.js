@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Button from './Button';
-import './ButtonPanel.css';
+import './ButtonShape.css';
 
-const ButtonPanel = ({ clickHandler }) => (
+const ButtonShape = ({ clickHandler }) => (
   <div className="button-panel">
     <div>
       <Button color="#E0E0E0" name="AC" clickHandler={clickHandler} />
@@ -38,8 +38,8 @@ const ButtonPanel = ({ clickHandler }) => (
   </div>
 );
 
-ButtonPanel.propTypes = {
+ButtonShape.propTypes = {
   clickHandler: PropTypes.func.isRequired,
 };
 
-export default ButtonPanel;
+export default ButtonShape;

@@ -1,7 +1,7 @@
 import React from 'react';
 import calculate from '../logic/calculate';
 import Display from './Display';
-import ButtonPanel from './ButtonPanel';
+import ButtonShape from './ButtonShape';
 import './App.css';
 
 class App extends React.Component {
@@ -30,7 +30,7 @@ class App extends React.Component {
     return (
       <div className="calculator">
         <Display result={this.result} />
-        <ButtonPanel clickHandler={this.handleClick} />
+        <ButtonShape clickHandler={this.handleClick} />
       </div>
     );
   }

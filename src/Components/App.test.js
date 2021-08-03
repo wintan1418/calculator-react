@@ -4,11 +4,11 @@ import { create } from 'react-test-renderer';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import Enzyme from 'enzyme';
 import App from './App';
-import ButtonPanel from './ButtonPanel';
+import ButtonShape from './ButtonShape';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe('ButtonPanel Component', () => {
+describe('ButtonShape Component', () => {
   it('Renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<App />, div);
@@ -19,11 +19,11 @@ describe('ButtonPanel Component', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('Passes the clickHandler correctly to ButtonPanel', () => {
+  it('Passes the clickHandler correctly to ButtonShape', () => {
     const app = Enzyme.shallow(<App />);
     const instance = app.instance();
 
-    expect(app.find(ButtonPanel).get(0).props.clickHandler).toEqual(instance.handleClick);
+    expect(app.find(ButtonShape).get(0).props.clickHandler).toEqual(instance.handleClick);
   });
 
   it('Updates the state correctly when clickHandler is invoked', () => {
