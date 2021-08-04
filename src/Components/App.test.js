@@ -26,7 +26,7 @@ describe('ButtonShape Component', () => {
     expect(app.find(ButtonShape).get(0).props.clickHandler).toEqual(instance.handleClick);
   });
 
-  it('Updates the state correctly when clickHandler is invoked', () => {
+  it('Updates the correctly when clickHandler is invoked', () => {
     const app = Enzyme.shallow(<App />);
     const instance = app.instance();
 
@@ -39,8 +39,8 @@ describe('ButtonShape Component', () => {
     const app = Enzyme.shallow(<App />);
     const instance = app.instance();
 
-    instance.setState({ next: '0', operation: '+', total: '15' });
-    expect(instance.result).toEqual('0+15');
+    instance.setState({ next: '2', operation: '+', total: '9' });
+    expect(instance.result).toEqual('2+9');
 
     instance.setState({ next: null, operation: null, total: null });
     expect(instance.result).toEqual('');
