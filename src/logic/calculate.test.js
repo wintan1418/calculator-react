@@ -88,7 +88,7 @@ describe('Calculate', () => {
   });
 
   describe('Handle operations', () => {
-    test('Moves the result from total to next when entering a sign after using equals', () => {
+    test('Shifts results from total to next when entering a sign after using equals', () => {
       const data = calculate({ total: '1', operation: '+', next: '1' }, '=');
 
       const result = calculate(data, '-');
@@ -132,7 +132,7 @@ describe('Calculate', () => {
       expect(result3).toEqual(Object.assign(empty, data3, { total: operate(data3.total, '-1', 'x') }));
     });
 
-    test('Calculates the result when using the percentage (%) sign correctly', () => {
+    test('Gives the result when using the percentage (%) sign correctly', () => {
       const data1 = {};
       const data2 = { next: '11' };
       const data3 = { next: '10', operation: '-', total: '15' };
@@ -162,7 +162,7 @@ describe('Calculate', () => {
       expect(result3).toEqual(Object.assign(empty, data3));
     });
 
-    test('Calculate the result if total, operation & next are filled', () => {
+    test('Calculate the total result,if operation & next are filled', () => {
       const data = { next: '100', operation: '÷', total: '10' };
 
       const result = calculate(data, '=');
