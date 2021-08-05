@@ -1,6 +1,6 @@
 ## react calculator
 In this project I have  built a  basic calculator using react React. The project is divided into five milestones, with each milestone having its own different unique  fucntionality. The app is capable of performing simple arithmetical tasks such as: addition, substraction, multiplication and division.
-![screenshot](./calcshot.png)
+![screenshot](./new screenshot.png)
 
 [Live version](https://wintan-calculator.herokuapp.com/)
 

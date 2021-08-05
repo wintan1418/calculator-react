@@ -7,13 +7,13 @@ body {
   flex-direction: column;
 }
 .navbar {
-  background: brown;
+  background: rgb(87, 85, 3);
   border-radius: 5%;
 }
 
 .navbar h2 {
   margin-top: 25px;
-  color: aqua;
+  color: rgba(12, 94, 12, 0.671);
   margin-left: 20px;
 }
 
