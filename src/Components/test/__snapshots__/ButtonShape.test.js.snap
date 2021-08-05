@@ -45,7 +45,7 @@ exports[`ButtonShape Component renders correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "red",
+          "background": "#ffa500",
           "width": "25%",
         }
       }
@@ -95,7 +95,7 @@ exports[`ButtonShape Component renders correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "red",
+          "background": "#ffa500",
           "width": "25%",
         }
       }
@@ -145,7 +145,7 @@ exports[`ButtonShape Component renders correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "red",
+          "background": "#ffa500",
           "width": "25%",
         }
       }
@@ -195,7 +195,7 @@ exports[`ButtonShape Component renders correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "red",
+          "background": "#ffa500",
           "width": "25%",
         }
       }
@@ -233,7 +233,7 @@ exports[`ButtonShape Component renders correctly 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "red",
+          "background": "#ffa500",
           "width": "25%",
         }
       }
