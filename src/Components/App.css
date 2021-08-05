@@ -1,3 +1,6 @@
+body {
+  background: rgba(82, 67, 8, 0.589);
+}
 .calculator {
   width: 700px;
   display: flex;
@@ -5,6 +8,7 @@
 }
 .navbar {
   background: brown;
+  border-radius: 5%;
 }
 
 .navbar h2 {
